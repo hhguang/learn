@@ -46,7 +46,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'thin'
+# gem 'thin'
 
  gem 'bootstrap-sass', '~> 2.3.1.0'
 
