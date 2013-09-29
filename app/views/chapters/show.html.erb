@@ -1,0 +1,80 @@
+<p id="notice"><%= notice %></p>
+<div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+	        <ol class="breadcrumb">
+			  <li><a href="#"><%= @chapter.course.title %></a></li>			  
+			  <li class="active"><%= @chapter.title %></li>
+			</ol>
+
+			<ul class="pagination">
+			  <li><a href="#">&laquo;</a></li>
+			  <li><a href="#">1</a></li>
+			  <li><a href="#">2</a></li>
+			  <li><a href="#">3</a></li>
+			  <li><a href="#">4</a></li>
+			  <li><a href="#">5</a></li>
+			  <li><a href="#">&raquo;</a></li>
+			</ul>
+
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title"><%= @chapter.title %></h3>
+			  </div>
+			  <div class="panel-body">
+			    Panel content
+			  </div>
+			</div>
+        </div><!--/span-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+        	<div class="panel panel-default">
+          	<ul class="nav nav-tabs" id="myTab">
+			  <li class="active"><a href="#home">公告</a></li>
+			  <li><a href="#profile">资源</a></li>
+			  <li><a href="#profile">知识点</a></li>
+			  
+			</ul>
+
+			<div class="tab-content">
+			  <div class="tab-pane active" id="home">...</div>
+			  <div class="tab-pane" id="profile">...</div>
+			  <div class="tab-pane" id="messages">...</div>
+			  <div class="tab-pane" id="settings">...</div>
+			</div>
+
+			<script>
+			  $(function () {
+			    $('#myTab a:last').tab('show')
+			  })
+			</script>
+			</div>
+
+			<div class="panel panel-default">
+          	<ul class="nav nav-tabs" id="myTab">
+			  <li class="active"><a href="#home">讨论</a></li>
+			  <li><a href="#profile">作业</a></li>
+			  <li><a href="#profile">问答</a></li>
+			  
+			</ul>
+
+			<div class="tab-content">
+			  <div class="tab-pane active" id="home">...</div>
+			  <div class="tab-pane" id="profile">...</div>
+			  <div class="tab-pane" id="messages">...</div>
+			  <div class="tab-pane" id="settings">...</div>
+			</div>
+
+			<script>
+			  $(function () {
+			    $('#myTab a:last').tab('show')
+			  })
+			</script>
+			</div>
+
+
+        </div><!--/span-->
+      </div><!--/row-->
+
